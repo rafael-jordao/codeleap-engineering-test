@@ -1,10 +1,11 @@
-button:enabled {
+button{
     background-color: rgb(0, 0, 0);
     border: none;
     padding: 0.8rem;
     color: white;
     width: 8rem;
     transition: 0.4s;
+    cursor: pointer;
 }
 
 button:disabled {

@@ -4,10 +4,16 @@ import "/Users/rafaeljordao/Documents/codeleap/src/index.css"
 import "./button.css"
 
 
+
 const UserLogin = () => {
 
     const [name, setName] = useState();
     
+    const onChange = (e) => {
+        localStorage.setItem('userName', e.target.value)
+        setName(e.target.value)
+    }
+        
     return (
         <div className="container d-flex justify-content-center align-items-center vh-100 p-5">
 
@@ -21,7 +27,8 @@ const UserLogin = () => {
                     name="name"
                     placeholder="Jhon Doe"
                     type="text"
-                    onChange={(e) => setName(e.target.value)}
+                    onChange={onChange}
+                    value={name}
                 />
                 <div className="d-flex justify-content-end pt-3">
                     <button disabled={!name}>ENTER</button>
@@ -32,6 +39,8 @@ const UserLogin = () => {
 }
 
 export default UserLogin;
+
+
 
 
 
