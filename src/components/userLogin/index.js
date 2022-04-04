@@ -6,21 +6,6 @@ import "./button.css"
 
 const UserLogin = () => {
 
-    const [name, setName] = useState();
-
-    const onChange = (e) => {
-        localStorage.setItem('userName', e.target.value)
-        setName(e.target.value)
-    }
-
-    let userName = name
-
-
-    const [submit, letSubmit] = useState();
-
-    const onClick = (ev) => {
-        localStorage.setItem(name, ev.target.value)
-    }
 
     return (
         <div className="container d-flex justify-content-center align-items-center vh-100 p-5">
@@ -39,12 +24,10 @@ const UserLogin = () => {
                     name="name"
                     placeholder="Jhon Doe"
                     type="text"
-                    onChange={onChange}
-                    value={userName}
-                    submit={submit}
+    
                 />
                 <div className="d-flex justify-content-end pt-3">
-                    <button onClick={onClick} disabled={!name}>ENTER</button>
+                    <button>ENTER</button>
                 </div>
             </FormGroup>
         </div>
