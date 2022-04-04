@@ -1,0 +1,22 @@
+button:enabled {
+    background-color: rgb(0, 0, 0);
+    border: none;
+    padding: 0.8rem;
+    color: white;
+    width: 8rem;
+    transition: 0.4s;
+}
+
+button:disabled {
+    background-color: gray;
+    border: none;
+    padding: 0.8rem;
+    color: rgb(180, 180, 180);
+    width: 8rem;
+    cursor:not-allowed;
+    opacity: 0.7;
+}
+
+button:hover{
+    opacity: 0.7;
+}

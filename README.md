@@ -1,3 +1,7 @@
+# What is this project?
+
+This project is an application test for a Junior Web Front-end position at CodeLead company.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
