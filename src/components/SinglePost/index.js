@@ -6,10 +6,10 @@ class SinglePost extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            SinglePost: { title: '', userName: '', timeAgo:'', paragraphContent:''},
+            SinglePost: { title: '', userName: '', timeAgo: '', paragraphContent: '' },
         };
     }
-    
+
     render() {
         return (
 
@@ -45,5 +45,4 @@ class SinglePost extends Component {
 }
 
 export default SinglePost;
-    
-    
+

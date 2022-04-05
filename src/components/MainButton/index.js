@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
-import "/Users/rafaeljordao/Documents/codeleap/src/components/MainButton/button.css"
+import "./button.css"
 
-class MainButton extends React.Component {
+class MainButton extends Component {
     constructor(props) {
         super(props);
         this.state = {

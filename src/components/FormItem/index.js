@@ -1,28 +1,25 @@
 import React, { Component } from "react";
 import { FormGroup, Input, Label } from "reactstrap";
-import MainButton from "../MainButton";
 
-class FormItem extends React.Component {
+class FormItem extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            input: { id: '', placeholder: '', type: ''},
+            FormItem: { placeHolder: '', type: '', label: '', title: '' },
         };
     }
 
     render() {
         return (
-            <div className="container">
+            <div>
                 <FormGroup>
+                    <h2 className="mb-4">{this.props.title}</h2>
+                    <Label >{this.props.label}</Label>
                     <Input
-                        id="exampleEmail"
-                        name="name"
-                        placeholder="String"
-                        type="text"
-                    />
+                        placeholder={this.props.placeHolder}
+                        type = {this.props.type}
+                        className="input-group mb-3"></Input>
                 </FormGroup>
-
-                <MainButton textContent='CREATE'></MainButton>
             </div>
 
 
