@@ -4,6 +4,7 @@ import MainButton from "../MainButton";
 import FormItem from "../FormItem";
 
 
+
 class CreatePost extends Component {
 
     render() {

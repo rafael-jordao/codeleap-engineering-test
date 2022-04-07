@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import { FormGroup, Input, Label } from "reactstrap";
+import MainButton from "../MainButton";
 
 class FormItem extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            FormItem: { placeHolder: '', type: '', label: '', title: '', isDisabled: true },
+            FormItem: { placeHolder: '', type: '', label: '', title: '', isdabled: false, setvalue: String },
         };
     }
 
@@ -19,8 +20,10 @@ class FormItem extends Component {
                         placeholder={this.props.placeHolder}
                         type={this.props.type}
                         className="input-group mb-3"
-                        isDisabled={this.props.isDisabled}
-                    ></Input>
+                        isdisabled={this.props.isdabled}
+                        setvalue = {this.props.value}
+                    />
+
                 </FormGroup>
             </div>
 
@@ -30,23 +33,5 @@ class FormItem extends Component {
     }
 }
 
-// function FormItem (props) {
-
-//     return (
-//         <div>
-//                 <FormGroup>
-//                     <h2 className="mb-4"></h2>
-//                     <Label
-//                     label={props.title}></Label>
-//                     <Input
-//                         placeholder={props.placeholder}
-
-//                        className="input-group mb-3"></Input>
-//                 </FormGroup>
-//             </div>
-
-
-//     )
-// }
 
 export default FormItem;
