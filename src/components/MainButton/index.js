@@ -11,21 +11,19 @@ class MainButton extends Component {
     constructor() {
         super();
         this.state = {
-            Button: { textContent: '', isactive: ''}
+            Button: { textContent: '', isdisabled:{}}
         };
-
-     
-
     }
+
+
+
 
     render() {
         return (
-            <div className={"d-flex justify-content-end pt-3"} >
+            <div className="d-flex justify-content-end pt-3" >
                 <button
-            
-                    onClick={handleClick}>
-                    {this.props.textContent}
-                </button>
+                disabled={this.props.isdisabled}
+                >{this.props.textContent}</button>
             </div>
         )
     }

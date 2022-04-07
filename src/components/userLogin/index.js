@@ -1,36 +1,34 @@
-import React, { useState, Component } from 'react';
-import "/Users/rafaeljordao/Documents/codeleap/src/index.css"
-import MainButton from '../MainButton';
-import FormItem from '../FormItem';
+import React, { Component } from 'react';
+
+import FormWithButton from '../FormItem/FormWithButton';
 
 
 
+class UserLogin extends Component {
 
-const UserLogin = () => {
-
-   
-    
+    render() {
         return (
             <div className="container d-flex justify-content-center align-items-center vh-100">
                 <div className='bg-light p-5'>
-                    <FormItem
-                        placeHolder='John Doe'
-                        title='Welcome to the CodeLeap network!'
-                        label='Please enter your name'
-                        
-                    />
-
-                    <MainButton
-                    textContent='ENTER'></MainButton>
+                        <FormWithButton 
+                        title="Welcome to the CodeLeap Network"
+                        buttonContent="ENTER"
+                        labelcontent = "Please enter your username"
+                        textplaceholder= "John Doeg"
+                        />
                 </div>
             </div>
 
         )
-    
+    }
 
 }
 
 export default UserLogin;
+                    
+
+
+
 
 
 

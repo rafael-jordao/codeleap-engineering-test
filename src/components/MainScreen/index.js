@@ -1,11 +1,15 @@
 import React, { useState, Component } from "react";
 import SinglePost from "../SinglePost";
-import MainButton from "../MainButton";
 import FormItem from "../FormItem";
+import FormWithButton from "../FormItem/FormWithButton";
 
 
 
 class CreatePost extends Component {
+
+    state = {
+        
+    }
 
     render() {
         return (
@@ -23,14 +27,11 @@ class CreatePost extends Component {
                             label='Title'>
                         </FormItem>
 
-                        <FormItem
-                            placeHolder='Content here'
-                            label='Content'
-                            type='textarea'>
-                        </FormItem>
-
-                        <MainButton
-                            textContent='CREATE' />
+                        <FormWithButton
+                            buttonContent="CREATE"
+                            typeofinput="text"
+                            textplaceholder="Content here"
+                        />
 
                     </div>
                 </div>

@@ -6,7 +6,7 @@ class FormItem extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            FormItem: { placeHolder: '', type: '', label: '', title: '', isdabled: false, setvalue: String },
+            FormItem: { placeHolder: '', type: '', label: '', title: ''},
         };
     }
 
@@ -20,8 +20,7 @@ class FormItem extends Component {
                         placeholder={this.props.placeHolder}
                         type={this.props.type}
                         className="input-group mb-3"
-                        isdisabled={this.props.isdabled}
-                        setvalue = {this.props.value}
+
                     />
 
                 </FormGroup>
