@@ -2,6 +2,8 @@ import React, { useState, Component } from 'react';
 import "/Users/rafaeljordao/Documents/codeleap/src/index.css"
 import MainButton from '../MainButton';
 import FormItem from '../FormItem';
+import { render } from '@testing-library/react';
+
 
 
 class UserLogin extends Component {
@@ -13,8 +15,8 @@ class UserLogin extends Component {
                     <FormItem
                         placeHolder='John Doe'
                         title='Welcome to the CodeLeap network!'
-                        label='Please enter your name'>
-                    </FormItem>
+                        label='Please enter your name'
+                    />
 
                     <MainButton textContent='ENTER'></MainButton>
                 </div>
@@ -26,6 +28,11 @@ class UserLogin extends Component {
 }
 
 export default UserLogin;
+
+
+
+
+
 
 
 
