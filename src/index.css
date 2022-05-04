@@ -2,6 +2,10 @@ body {
     background-color: #DDDD;
 }
 
+li {
+    list-style: none;
+}
+
 @media (max-width: 870px) {
     html {
         font-size: 90%;

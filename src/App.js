@@ -1,16 +1,19 @@
 import React from "react";
-import UserLogin from './components/userLogin/index';
-import MainScreen from "./components/MainScreen";
+import UserLogin from "./pages/UserLogin";
+import MainScreen from "./pages/MainScreen";
 import "/Users/rafaeljordao/Documents/my-codes/codeleap/src/index.css"
+import { BrowserRouter as Router } from "react-router-dom";
+import MainRoutes from './mainRoutes';
+
 
 function App() {
   return (
     <div className="App">
 
-      <UserLogin />
-
-      <MainScreen /> 
-
+      <Router>
+        <MainRoutes />
+      </Router>
+      {/* <UserLogin /> */}
     </div>
   );
 }
