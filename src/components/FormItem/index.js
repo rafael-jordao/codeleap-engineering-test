@@ -1,35 +1,29 @@
-import React, { Component } from "react";
+import React from "react";
 import { FormGroup, Input, Label } from "reactstrap";
-import MainButton from "../MainButton";
+import "/Users/rafaeljordao/Documents/my-codes/codeleap/src/components/MainButton/button.css"
 
-class FormItem extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            FormItem: { placeHolder: '', type: '', label: '', title: ''},
-        };
-    }
+const FormItem = ({ placeHolder, label, title, theValue, handleChange }) => {
 
-    render() {
-        return (
-            <div>
-                <FormGroup>
-                    <h2 className="mb-4">{this.props.title}</h2>
-                    <Label >{this.props.label}</Label>
-                    <Input
-                        placeholder={this.props.placeHolder}
-                        type={this.props.type}
-                        className="input-group mb-3"
+    return (
 
-                    />
-
-                </FormGroup>
-            </div>
+        <div>
+            <FormGroup>
+                <h2 className="mb-4">{title}</h2>
+                <Label >{label}</Label>
+                <Input
+                    placeholder={placeHolder}
+                    type='text'
+                    onChange={handleChange}
+                    value={theValue}
+                />
+            </FormGroup>
+        </div>
 
 
-        );
 
-    }
+    );
+
+
 }
 
 
